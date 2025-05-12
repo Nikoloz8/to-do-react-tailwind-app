@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+/* src/index.css */
+@import "tailwindcss";
+
+/* Injects base, components, utilities */
+@layer base {
+  /* custom reset or base styles */
+}
+
+@layer components {
+  /* custom component classes */
+}
+
+@layer utilities {
+  /* custom utility classes */
+}
+
+@theme {
+  --font-display: "Josefin Sans", sans-serif;
+  --breakpoint-little: 600px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+#root {
+  text-align: left !important;
+  padding: 0 !important;
+  max-width: 100% !important;
+}
+
+html {
+  font-size: 10px;
+}
+
+
+.check-div:active {
+  background: url("/images/icon-check.svg"), linear-gradient(120deg, #55DDFF, #C058F3);
+}
+
+.hoveredCheck:hover {
+  background: linear-gradient(120deg, #55DDFF, #C058F3);
+}
