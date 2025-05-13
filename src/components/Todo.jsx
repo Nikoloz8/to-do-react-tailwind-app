@@ -16,7 +16,7 @@ export default function Todo({ todos, setDone, done, setTodos, activeTodos, comp
         return m.map(
             (e) => {
                 return <div style={{
-                    ...(darkLight ? { backgroundColor: "#FFFFFF", borderBottom: "1px solid #E3E4F1"} : {}),
+                    ...(darkLight ? { backgroundColor: "#FFFFFF", borderBottom: "1px solid #E3E4F1" } : {}),
                     ...(e[1] === 0 ? { borderRadius: "5px 5px 0 0" } : {}),
                 }} className="hoveredcheck bg-[#25273D] w-[100%] h-[64px] p-[16px]! items-center flex justify-between border-solid border-[#393A4B] border-b-[1px]" key={e[1]} >
                     <div className="flex items-center gap-[20px]">
